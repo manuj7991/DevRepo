@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Cvent Accounts" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+
+            <p class="slds-m-bottom_small">
+                <lightning-button label="Load Accounts" onclick={handleLoad}></lightning-button>
+            </p>
+            <template if:true={result}>
+                <template for:each={result} for:item="item">
+                    <p key={item.id}>{item.Name}</p>
+                </template>
+            </template>
+    
+            <template if:true={error}>
+                Error: {error}
+            </template>
+        </div>
+    </lightning-card>
+</template>
