@@ -4,7 +4,6 @@ public class AccountConsumeService {
     public static List<Object> getAccountsCvent(){
         
         //Adding change in develop1 class
-        //Change 2
 
         List<Object> resMap = new List<Account>();
         Map<String,Account> mapRes = new Map<String,Account>(); 
